@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar with Video Background</title>
+    <!-- Google Fonts - Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS (linked from external file) -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="aims.css" />
+    <link rel="stylesheet" href="split.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body>
+    <!-- Video Background Container -->
+    <div class="video-container">
+      <!-- Video Background - Replace 'your-video.mp4' with your actual video file -->
+      <video autoplay muted loop id="bg-video">
+        <source src="video/bg.mp4" type="video/mp4" />
+        <!-- Fallback image if video doesn't load -->
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Overlay to ensure text readability -->
+      <div class="video-overlay"></div>
+    </div>
+
+    <!-- Hero Section Container -->
+    <div class="hero-section">
+      <!-- Main Navigation Bar -->
+      <nav class="navbar">
+        <!-- Logo Section -->
+        <div class="logo">
+          <a href="#"><img src="images/logo.png" alt="Logo" /></a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">Plant and Gift</a></li>
+            <li><a href="#">For Companies</a></li>
+
+            <li><a href="#">About Us</a></li>
+
+            <!-- Free Tree Promotion Section -->
+            <li class="free-tree">
+              <a href="#">
+                <i class="fas fa-gift"></i>
+                Want a free tree?
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Side Section - Language & Auth Buttons -->
+        <div class="right-section">
+          <div class="auth-buttons">
+            <button class="login-btn">Log in</button>
+            <!-- <button class="signup-btn">Start forest</button> -->
+          </div>
+        </div>
+
+        <!-- Mobile Hamburger Menu -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <!-- Hero Content - Add your hero content here -->
+      <div class="hero-content">
+        <h1>Grow Your Forest</h1>
+        <p>Plant trees, grow forests, save the planet.</p>
+        <button class="cta-button">Get Started</button>
+      </div>
+    </div>
+
+    <!-- Aims and Objectives Section - Add this after the hero-section div in your HTML -->
+    <section class="aims-section">
+    <!-- Interactive Background -->
+    <div class="interactive-background">
+      <div class="floating-icon" id="leaf1">
+        <i class="fas fa-leaf"></i>
+      </div>
+      <div class="floating-icon" id="tree1">
+        <i class="fas fa-tree"></i>
+      </div>
+      <div class="floating-icon" id="seedling1">
+        <i class="fas fa-seedling"></i>
+      </div>
+      <div class="floating-icon" id="cloud1">
+        <i class="fas fa-cloud"></i>
+      </div>
+      <div class="floating-icon" id="sun1">
+        <i class="fas fa-sun"></i>
+      </div>
+      <div class="floating-icon" id="water1">
+        <i class="fas fa-tint"></i>
+      </div>
+    </div>
+
+    <div class="aims-container">
+      <div class="section-header">
+        <h2>Our Aims & Objectives</h2>
+        <p>Helping the planet one tree at a time</p>
+      </div>
+
+      <div class="aims-grid">
+        <!-- Aim Box 1 -->
+        <div class="aim-box">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://healtharkinsights.com/wp-content/uploads/2023/01/oAymCooSEONWHzOIf1cj_Newsletter_New_Format_2.jpg" alt="Tree planting" class="aim-image">
+              <h3>Plant 1 Million Trees</h3>
+              <p class="flip-instruction">(Click to learn more)</p>
+            </div>
+            <div class="flip-card-back">
+              <div class="aim-icon">
+                <i class="fas fa-seedling"></i>
+              </div>
+              <h3>Plant 1 Million Trees</h3>
+              <p>
+                Our ambitious goal is to plant one million trees across the globe,
+                focusing on areas affected by deforestation and climate change.
+              </p>
+              <p class="flip-instruction">(Click to flip back)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aim Box 2 -->
+        <div class="aim-box">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://www.npws.net/hs-fs/hubfs/Imported_Blog_Media/7-Ways-to-Reduce-the-Carbon-Footprint-of-Your-Marketing-Efforts-Sep-21-2022-09-20-56-16-PM.jpg?width=800&height=450&name=7-Ways-to-Reduce-the-Carbon-Footprint-of-Your-Marketing-Efforts-Sep-21-2022-09-20-56-16-PM.jpg" alt="Carbon reduction" class="aim-image">
+              <h3>Reduce Carbon Footprint</h3>
+              <p class="flip-instruction">(Click to learn more)</p>
+            </div>
+            <div class="flip-card-back">
+              <div class="aim-icon">
+                <i class="fas fa-globe-americas"></i>
+              </div>
+              <h3>Reduce Carbon Footprint</h3>
+              <p>
+                Every tree planted helps absorb CO2 from the atmosphere,
+                contributing to the reduction of global carbon emissions.
+              </p>
+              <p class="flip-instruction">(Click to flip back)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aim Box 3 -->
+        <div class="aim-box">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://clubshr-cms-uploads-211125357115.s3.ap-southeast-2.amazonaws.com/uploads/public/656/54c/456/65654c4561d0e633205714.png" alt="Community support" class="aim-image">
+              <h3>Support Local Communities</h3>
+              <p class="flip-instruction">(Click to learn more)</p>
+            </div>
+            <div class="flip-card-back">
+              <div class="aim-icon">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <h3>Support Local Communities</h3>
+              <p>
+                We work with local communities to provide sustainable livelihoods
+                through our tree planting initiatives and education programs.
+              </p>
+              <p class="flip-instruction">(Click to flip back)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aim Box 4 -->
+        <div class="aim-box">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://miro.medium.com/v2/resize:fit:1100/1*YS_qYrU7mKxjVLP4qTH_ZA.jpeg" alt="Biodiversity" class="aim-image">
+              <h3>Preserve Biodiversity</h3>
+              <p class="flip-instruction">(Click to learn more)</p>
+            </div>
+            <div class="flip-card-back">
+              <div class="aim-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <h3>Preserve Biodiversity</h3>
+              <p>
+                By restoring forests, we help preserve habitats for countless
+                species and maintain the delicate balance of our ecosystems.
+              </p>
+              <p class="flip-instruction">(Click to flip back)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Split Target Audience Section - Minimalist Card Design -->
+    <section class="split-section-container">
+      <div class="split-section">
+        <!-- Individual Card (Left Side) -->
+        <div class="audience-card individuals-card">
+          <div class="brush-accent"></div>
+          <div class="panel-badge">FOR INDIVIDUALS</div>
+          <div class="panel-content">
+            <h2>Are you a person?</h2>
+            <p>
+              Every gesture counts. Plant trees from your smartphone and join
+              our community of pragmatic dreamers.
+            </p>
+            <div class="panel-buttons">
+              <a href="#" class="outline-button">Gift a tree</a>
+              <a href="#" class="solid-button">Start here</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Company Card (Right Side) -->
+        <div class="audience-card companies-card">
+          <div class="brush-accent"></div>
+          <div class="panel-badge">FOR COMPANIES</div>
+          <div class="panel-content">
+            <h2>Are you a company?</h2>
+            <p>
+              Discover our services to make sustainability the competitive
+              advantage of your business.
+            </p>
+            <div class="panel-buttons">
+              <a href="#" class="outline-button">Gift ideas</a>
+              <a href="#" class="solid-button">Find More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Distinct Footer Section for PlantNepal -->
+    <footer class="footer-section">
+      <div class="footer-wrapper">
+        <div class="footer-container">
+          <!-- Logo and Mission -->
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="Logo" /></a>
+              </div>
+            </div>
+            <p class="footer-tagline">
+              Reforesting Nepal, preserving biodiversity, empowering
+              communities.
+            </p>
+          </div>
+
+          <!-- Footer Links -->
+          <div class="footer-links">
+            <div class="footer-links-column">
+              <h4>Our Work</h4>
+              <ul>
+                <li><a href="#">Plant Trees</a></li>
+                <li><a href="#">Restoration Projects</a></li>
+                <li><a href="#">Community Programs</a></li>
+                <li><a href="#">Impact Report</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links-column">
+              <h4>Get Involved</h4>
+              <ul>
+                <li><a href="#">Individual Donors</a></li>
+                <li><a href="#">Corporate Partners</a></li>
+                <li><a href="#">Volunteer</a></li>
+                <li><a href="#">Events</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links-column">
+              <h4>About Us</h4>
+              <ul>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Transparency</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h4>Stay Connected</h4>
+          <p>Join our newsletter for updates on our reforestation efforts.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <p>© 2025 PlantNepal. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom JavaScript (linked from external file) -->
+    <script src="index.js"></script>
+    <script src="aims.js"></script>
+  </body>
+</html>

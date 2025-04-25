@@ -1,0 +1,212 @@
+ /* ===============================================
+       Aims and Objectives Section
+       =============================================== */
+    .aims-section {
+      position: relative;
+      min-height: 95vh;
+      background-color: var(--warm-beige);
+      padding: 2rem;
+      overflow: hidden;
+    }
+
+    /* Interactive Background */
+    .interactive-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .floating-icon {
+      position: absolute;
+      color: var(--primary-green);
+      opacity: 0.2;
+      transition: transform 0.3s ease;
+      z-index: 1;
+    }
+
+    .floating-icon i {
+      font-size: 3rem;
+    }
+
+    #leaf1 { top: 15%; left: 10%; }
+    #tree1 { top: 70%; left: 85%; }
+    #seedling1 { top: 25%; left: 75%; }
+    #cloud1 { top: 80%; left: 20%; }
+    #sun1 { top: 50%; left: 50%; }
+    #water1 { top: 60%; left: 30%; }
+
+    /* Aims Container */
+    .aims-container {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-header h2 {
+      font-size: 2.5rem;
+      color: var(--primary-green);
+      margin-bottom: 1rem;
+    }
+
+    .section-header p {
+      font-size: 1.2rem;
+      color: var(--soft-brown);
+    }
+
+    /* Aims Grid Layout */
+    .aims-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Flip Card Styling */
+    .aim-box {
+      background-color: transparent;
+      perspective: 1000px;
+      height: 300px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      cursor: pointer;
+    }
+
+    .aim-box:hover .flip-card-inner {
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .aim-box.flipped .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
+
+    .flip-card-front {
+      background-color: var(--white);
+      color: var(--primary-green);
+    }
+
+    .flip-card-back {
+      background-color: var(--primary-green);
+      color: var(--white);
+      transform: rotateY(180deg);
+    }
+
+    .aim-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .aim-icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 1rem;
+      background-color: var(--light-green);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .aim-icon i {
+      font-size: 1.5rem;
+      color: var(--white);
+    }
+
+    .aim-box h3 {
+      font-size: 1.2rem;
+      margin: 0.2rem 0;
+    }
+
+    .aim-box p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-top: 0.2rem;
+    }
+
+    .flip-instruction {
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      .aims-section {
+        padding: 3rem 1.5rem;
+      }
+      
+      .section-header h2 {
+        font-size: 2rem;
+      }
+      
+      .aims-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .aim-box {
+        height: 280px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .aims-section {
+        padding: 2rem 1rem;
+      }
+      
+      .section-header h2 {
+        font-size: 1.8rem;
+      }
+      
+      .section-header p {
+        font-size: 1rem;
+      }
+      
+      .aim-icon {
+        width: 50px;
+        height: 50px;
+      }
+      
+      .aim-box {
+        height: 250px;
+      }
+
+      .aim-image {
+        height: 140px;
+      }
+    }
