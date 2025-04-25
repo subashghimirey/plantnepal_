@@ -1,7 +1,13 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "index.php", "use": "vercel-php@0.6.0" },
-      { "src": "user.php", "use": "vercel-php@0.6.0" }
+    "functions": {
+      "**/*.php": {
+        "runtime": "vercel-php@0.6.0"
+      }
+    },
+    "routes": [
+      { "src": "/css/(.*)", "dest": "/css/$1" },
+      { "src": "/js/(.*)", "dest": "/js/$1" },
+      { "src": "/(.*)", "dest": "/$1" }
     ]
   }
+  
